@@ -3,6 +3,7 @@ package w19Progetto.processoDiControllo;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import w19Progetto.sonda.Sonda;
 
 @Getter
 @Setter
@@ -14,5 +15,5 @@ public abstract class ProcessoDiControllo {
 		this.controllerId = controllerId;
 	}
 
-	public abstract void sendAlarm();
+	public abstract void sendAlarm(Sonda sonda);
 }

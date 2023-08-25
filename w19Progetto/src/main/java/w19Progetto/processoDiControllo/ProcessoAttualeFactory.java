@@ -12,7 +12,7 @@ public class ProcessoAttualeFactory extends ProcessiFactory {
 	public ProxyCentroDiControllo proxyControl;
 
 	@Override
-	public ProcessoDiControllo createController() {
+	public ProcessoDiControllo createController(ProxyCentroDiControllo proxyControl) {
 
 		Random rnd = new Random();
 		ProcessoAttuale pa = new ProcessoAttuale(rnd.nextInt(10000), proxyControl);

@@ -27,7 +27,7 @@ public class ProgettoRunner implements CommandLineRunner {
 		CentroDiControllo controlCenter = new CentroDiControllo();
 		ProxyCentroDiControllo proxyControlCenter = new ProxyCentroDiControllo(controlCenter);
 		Sonda sonda1 = new Sonda(64.2, 187.4);
-		Sonda sonda2 = new Sonda(226.1, 1.9);
+		Sonda sonda2 = new Sonda(64.3, 187.6);
 		Sonda sonda3 = new Sonda(122.8, 45.7);
 		Sonda sonda4 = new Sonda(15.7, 342.4);
 		ProcessoDiControllo processo1 = processiFactory.installController(proxyControlCenter);

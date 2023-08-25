@@ -27,13 +27,8 @@ public class ProxyCentroDiControllo {
 			System.out.println("Errore nella scrittura del finto database");
 		}
 		if (sonda.getLivelloFumo() > 5) {
-			centroControllo.sendAlarmToOperators(alarmUrl(sonda));
+			centroControllo.sendAlarmToOperators(centroControllo.alarmUrl(sonda));
 		}
-	}
-
-	public String alarmUrl(Sonda sonda) {
-		return "http://host/alarm?=idsonda" + sonda.getSondaId() + "&lat=" + sonda.getLatitudine() + "&lon="
-				+ sonda.getLongitudine() + "&smokelevel=" + sonda.getLivelloFumo();
 	}
 
 }
